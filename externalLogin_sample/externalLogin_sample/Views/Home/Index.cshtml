@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p>The aim of this project is to present codes on how to create manual Oauth flow with facebook and Google With Asp.NEt</p>
+</div>
+<div class="row">
+
+    @using (Html.BeginForm("CustomLogin", "Home", FormMethod.Post, new { @class = "login social-form form" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="col-md-4">
+            <p><button class="btn btn-default" type="submit" name="Provider" value="Google" href="https://go.microsoft.com/fwlink/?LinkId=301865">Login With Google &raquo;</button></p>
+
+        </div>
+            <div class="col-md-4">
+                <p><button class="btn btn-default" type="submit" name="Provider" value="Facebook" href="https://go.microsoft.com/fwlink/?LinkId=301865">Login With Facebook &raquo;</button></p>
+
+            </div>
+    }
+</div>
