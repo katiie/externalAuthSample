@@ -9,3 +9,5 @@ https://developers.google.com/identity/protocols/OAuth2UserAgent
 
 https://developers.facebook.com/docs/facebook-login/access-tokens
 
+To run this code the redirect url in your facebook or google app should look like this "http://xxx@xx.com/Home/CustomOauthCallback" which can also be https.
+
